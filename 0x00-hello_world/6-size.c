@@ -1,4 +1,4 @@
-#include <studio.h)
+#include <studio.h>
 /**
  * main - C program that prints the size of various types
  *
