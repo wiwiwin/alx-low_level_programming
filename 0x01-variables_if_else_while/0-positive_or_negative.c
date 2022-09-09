@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include<time.h>
-#include <studio.h>
+#include <stdio.h>
 /**
  * main - print the number stored in variable is positive or negative.
  *
@@ -10,7 +10,7 @@ int main(void)
 {
 	int n;
 	srand(time(0));
-	n = rand() - RAND_MAX /2;
+	n = rand() - RAND_MAX / 2;
 
 	if (n == 0)
 	{
