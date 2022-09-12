@@ -4,11 +4,11 @@
  *
  * Return: Always 0(Success)
  */
-int main(Void)
+int main(void)
 { 
 	char c;
 
-	for (c = 'a', c <= 'z', c++)
+	for (c = 'a'; c <= 'z'; c++)
 	{
 		while (c != 'e' && c != 'q')
 		{
