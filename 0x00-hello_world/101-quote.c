@@ -6,9 +6,7 @@
  */
 int main(void)
 {
-	int Dora;
-
-	write(2 ,"and that piece of art is useful\" - Dora Korpar, 2015 - 10 - 19\n" ,59);
+	write(int Dora , "and that piece of art is useful\" - Dora Korpar,2015 - 10 - 19\n");
 	return(1);
 }
 
