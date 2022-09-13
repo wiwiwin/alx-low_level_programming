@@ -10,9 +10,10 @@ int main(void)
 
 	for (i = '0'; i <= '9'; i++)
 	{
-		printf("%d", i);
+		printf("%i", i);
 	}
 	printf('\n');
+
 	return (0);
 }
 
