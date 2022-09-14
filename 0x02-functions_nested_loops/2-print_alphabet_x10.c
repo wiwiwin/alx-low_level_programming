@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * prints 10 timees the alphabet in lowercase
+ * print_alphabet_x10 - prints 10 timees the alphabet in lowercase
  * Return: Always 0
  */
 void print_alphabet_x10(void)
@@ -16,7 +16,5 @@ void print_alphabet_x10(void)
 			_putchar(c);
 		}
 		_putchar('\n');
-		return (0);
-	
 	}
 }
