@@ -3,7 +3,6 @@
 /**
  * main - causes an infinite loop
  * Return: 0
- * while loop - causing the out put to go into an infinite loop.
  */
 
 int main(void)
