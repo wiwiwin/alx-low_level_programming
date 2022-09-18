@@ -3,7 +3,7 @@
 #include<stdio.h>
 
 /**
- * main : print the last digit of the number stored in the variable
+ *main - prints random number to variable
  *
  * Return: Always 0 (success)
  */
@@ -26,4 +26,5 @@ int main(void)
 	{
 		printf("less than 6 and not 0\n");
 	}
+	return (0);
 }
