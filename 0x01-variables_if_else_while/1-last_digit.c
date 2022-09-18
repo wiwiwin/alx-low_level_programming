@@ -13,8 +13,8 @@ int main(void)
 	char str[] = "Last digit of";
 
 	srand(time(0));
-	n = rand() - RAND_Max / 2;
-	printf("%s %i is %i and is ", last, n, n % 10);
+	n = rand() - RAND_MAX / 2;
+	printf("%s %i is %i and is ", str, n, n % 10);
 	if (n % 10 > 5)
 	{
 		printf("greater than 5\n");
