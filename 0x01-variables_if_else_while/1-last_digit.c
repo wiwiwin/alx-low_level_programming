@@ -14,9 +14,10 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_Max / 2;
+	printf("%s %i is %i and is ", last, n, n % 10);
 	if (n % 10 > 5)
 	{
-		printf("%s%i is %i and is", str, n, n % 10);
+		printf("greater than 5\n");
 	}
 	else if (n % 10 == 0)
 	{
