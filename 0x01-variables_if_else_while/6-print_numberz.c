@@ -2,21 +2,16 @@
 /**
  * main - prints all single digit numbers of base 10
  *
- * Retun: Always (Success)
+ * Return:Always (Success)
  */
 int main(void)
 {
 	int n;
 
-	n = 0;
-	while (n < 10)
-
-		{
-
+	for (n = '0'; n <= '9'; n++)
+	{
 		putchar(n);
-		n++;
-
-		}
+	}
 	putchar('\n');
 
 	return (0);
