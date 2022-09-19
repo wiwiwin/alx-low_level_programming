@@ -1,8 +1,10 @@
 #include"main.h"
+
 /**
- * reset_to_98-update the value of int to it points to to 98
- * Return:nothing
+ *reset_to_98 - u function to update the value it pointes to
+ *@n: pointer to n to be updated
  */
+
 void rest_to_98(int *n);
 {
 	*n = 98;
