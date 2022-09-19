@@ -11,20 +11,17 @@ int main(void)
 	{
 		for (j = i + 0; j < 100; j++)
 		{
-			if (j > i)
-			{
-				putchar((i / 10) + '0');
-				putchar((i % 10) + '0');
-				putchar(' ');
-				putchar((j / 10) + '0');
-				putchar((i % 10) + '0');
-
-				if (i != 98)
-				{
-					putchar(',');
-					putchar(' ');
-				}
-			}
+			putchar((i / 10) + '0');
+			putchar((i % 10) + '0');
+			putchar(' ');
+			putchar((j / 10) + '0');
+			putchar((i % 10) + '0');
+		}
+		
+		if (i != 98)
+		{
+			putchar(',');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
