@@ -2,20 +2,17 @@
 #include<string.h>
 /**
  * print_rev -> function that prints a string in reverse
- * @s: pointers to a string 
+ * @s:string pointer
  */
 void print_rev(char *s)
 {
-	int i, j, k, temp;
+	int i, j;
 
-	i = 0;
-	while (s[i] != '\0')
+	j = 0;
+	while (s[j] != '\0')
 	{
-		i++;
+		j++;
 	}
-	k = 0;
-	j = i - 1;
-
 	for (i = n - 1 ; i >= 0; i--)
 	{
 		_putchar (s[i]);
