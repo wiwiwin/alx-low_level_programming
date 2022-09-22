@@ -6,23 +6,18 @@
  */
 char *leet(char *s)
 {
-	int i = 0, j, len = 5;
-	char a[5] = {'A', 'E', 'O', 'T', 'L'};
-	char b[5] = { '4', '3', '0', '7', '1'};
+	int i = 0, j;
 
-	while (s[a])
+	char a[] = "aAeEoOtTlL";
+	char b[] = "4433007711";
+
+	for (i = 0; *(s + i); i++)
 	{
-		j = 0;
-
-		while (j < len)
+		for (j = 0; j <= 9; j++)
 		{
-			if (s[i] == a[j] || s[i] - 32 == a[j])
-				s[i] = b[j];
-			j++;
+			if (a[j] == *(s + i))
+				*(s + i) = b[j];
 		}
-		a++;
 	}
-
 	return (s);
 }
-
