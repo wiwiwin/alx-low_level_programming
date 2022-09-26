@@ -6,7 +6,7 @@
  */
 char *rot13(char *s)
 {
-	int indx1 = 0, indx2;
+	int i, j;
 	char a[52] = {'A', 'B', 'C', 'D', 'E', 'F',
 	'G', 'H', 'I', 'J', 'K', 'L',
 	'M', 'N', 'O', 'P', 'Q', 'R',
@@ -25,17 +25,16 @@ char *rot13(char *s)
 	'b', 'c', 'd', 'e', 'f', 'g', 'h',
 	'i', 'j', 'k', 'l', 'm'};
 
-	while (s[indx1])
+	for (i = 0, *(s + i); i++)
 	{
-		for (indx2 = 0; indx2 < 52; indx2++)
+		for (j = 0; j < 52; j++)
 		{
-			if (s[indx1] == a[indx2])
+			if (a[j] == *(s + i))
 			{
-				s[indx1] = b[indx2];
+				*(s + i) = b[j];
 				break;
 			}
 		}
-		indx1++;
 	}
 	return (s);
 }
