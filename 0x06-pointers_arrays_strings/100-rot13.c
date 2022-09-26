@@ -6,21 +6,36 @@
  */
 char *rot13(char *s)
 {
-	int i, j;
+	int indx1 = 0, indx2;
+	char a[52] = {'A', 'B', 'C', 'D', 'E', 'F',
+	'G', 'H', 'I', 'J', 'K', 'L',
+	'M', 'N', 'O', 'P', 'Q', 'R',
+	'S', 'T', 'U', 'V', 'W', 'X',
+	'Y', 'Z', 'a', 'b', 'c', 'd',
+	'e', 'f', 'g', 'h', 'i', 'j',
+	'k', 'l', 'm', 'n', 'o', 'p',
+	'q', 'r', 's', 't', 'u', 'v',
+	'w', 'x', 'y', 'z'};
+	char a[52] = {'N', 'M', 'O', 'P', 'Q', 'R',
+	'S', 'T', 'U', 'V', 'W', 'X', 'Y',
+	'Z', 'A', 'B', 'C', 'D', 'E', 'F',
+	'G', 'H', 'I', 'J', 'K', 'L', 'M',
+	'n', 'o', 'p', 'q', 'r', 's', 't',
+	'u', 'v', 'w', 'x', 'y', 'z', 'a',
+	'b', 'c', 'd', 'e', 'f', 'g', 'h',
+	'i', 'j', 'k', 'l', 'm'};
 
-	char a[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char b[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
-
-	for (i = 0; *(s + i); i++)
+	while (s[indx1])
 	{
-		for (j = 0; j < 52; j++)
+		for (indx2 = 0; indx2 < 52; indx2++)
 		{
-			if (a[j] == *(s + i))
+			if (s[indx1] == a[indx2])
 			{
-				*(s + i) = b[j];
+				s[indx1] = b[indx2];
 				break;
 			}
 		}
+		indx1++;
 	}
 	return (s);
 }
